@@ -1,0 +1,42 @@
+import requests
+import re
+
+def get_github_user_info(username):
+    try:
+        url = f'https://api.github.com/users/{username}'
+        
+        response = requests.get(url)
+        
+        if response.status_code == 200:
+            user_data = response.json()
+            
+            print(f"Nom d'utilisateur: {user_data['login']}")
+            print(f"Nom complet: {user_data['name']}")
+            print(f"Biographie: {user_data['bio']}")
+            print(f"Nombre de followers: {user_data['followers']}")
+            print(f"Nombre d'abonnements: {user_data['following']}")
+            print(f"Nombre de repos: {user_data['public_repos']}")
+        else:
+            print(f"Erreur : Code de réponse {response.status_code}")
+    except Exception as e:
+        print(f"Une erreur s'est produite : {e}")
+
+def extract_github_username(github_url):
+    try:
+        match = re.search(r'https://github\.com/(\S+)', github_url)
+        
+        if match:
+            return match.group(1)
+        else:
+            raise ValueError("Format de lien GitHub invalide")
+    except Exception as e:
+        print(f"Une erreur s'est produite lors de l'extraction du nom d'utilisateur : {e}")
+        return None
+
+github_url = "https://github.com/0xho4ng"
+github_username = extract_github_username(github_url)
+
+if github_username:
+    get_github_user_info(github_username)
+else:
+    print("Impossible d'extraire le nom d'utilisateur du lien GitHub.")
