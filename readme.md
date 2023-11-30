@@ -1,15 +1,4 @@
 # Projet OSINT Usercheck Github Compte
-  ___  ____ ___ _   _ _____   _____ ___   ___  _     
- / _ \/ ___|_ _| \ | |_   _| |_   _/ _ \ / _ \| |    
-| | | \___ \| ||  \| | | |     | || | | | | | | |    
-| |_| |___) | || |\  | | |     | || |_| | |_| | |___ 
- \___/|____/___|_| \_|_|_|____ |_| \___/_\___/|_____|
-| | | / ___|| ____|  _ \ / ___| | | | ____/ ___| |/ /
-| | | \___ \|  _| | |_) | |   | |_| |  _|| |   | ' / 
-| |_| |___) | |___|  _ <| |___|  _  | |__| |___| . \ 
- \___/|____/|_____|_| \_\\____|_| |_|_____\____|_|\_\
-
-
 
 
 [![OSINT](https://img.shields.io/badge/OSINT-Training-blue)](https://ozint.eu) [![Python Version](https://img.shields.io/badge/Python-Latest%20Version-yellow)](https://www.python.org/downloads/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/lou-j/) [![License: MIT](https://img.shields.io/badge/License-MIT-magenta.svg)](licence) [![GitHub stars](https://img.shields.io/github/stars/0xho4ng/usercheck-github.svg?style=social&label=Star&maxAge=2592000)](https://github.com/0xho4ng/usercheck-github/stargazers/)
