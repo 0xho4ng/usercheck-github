@@ -33,7 +33,11 @@ def extract_github_username(github_url):
         print(f"Une erreur s'est produite lors de l'extraction du nom d'utilisateur : {e}")
         return None
 
-github_url = "https://github.com/0xho4ng"
+# Demander à l'utilisateur son nom d'utilisateur GitHub
+user_input = input("Entrez votre nom d'utilisateur GitHub : ")
+github_url = f'https://github.com/{user_input}'
+
+# Extraire le nom d'utilisateur à partir du lien
 github_username = extract_github_username(github_url)
 
 if github_username:
