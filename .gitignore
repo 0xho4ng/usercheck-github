@@ -1,0 +1,15 @@
+# Fichiers générés par Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+
+# Environnement virtuel
+venv/
+
+# Fichiers générés par l'exécution du programme
+output/
+
+# Ignorer les fichiers spécifiques
+config.ini
