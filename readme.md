@@ -39,5 +39,7 @@ Ce projet vise à créer un outil simple de vérification de présence d'un nom 
 4. **Update**
 
 Demande à l'utisateur de rentrer son username de github pour avoir directement ses informations par rapport à son github.
+
 ![Image d'illustration](images/usercheck-enter-username.png)
+
 ![Image d'illustration](images/usercheck-enter-username-fonctionnement.png)
