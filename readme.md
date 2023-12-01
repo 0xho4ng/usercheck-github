@@ -10,7 +10,7 @@
 Ce projet vise à créer un outil simple de vérification de présence d'un nom d'utilisateur sur les réseaux sociaux, en utilisant l'OSINT (Open Source Intelligence). Il utilise l'API GitHub pour récupérer des informations sur un utilisateur. C'était un projet crée pour un TP Open-Source.
 
 ![Image d'illustration](images/usercheck.png)
-## Installation de l'environnement Python avec pyenv
+## Installation de l'environnement Python avec venv
 
 1. **Configuration d'un environnement virtuel Python sur Linux:**
 ---
@@ -55,7 +55,6 @@ Exécutez le script
    ```
 
 ![Image d'illustration](images/usercheck-demo.png)
-
 
 3. Le programme affiche les informations sur l'utilisateur si le nom d'utilisateur est trouvé, sinon, il affiche un message indiquant que le nom d'utilisateur n'a pas été trouvé. 
 
