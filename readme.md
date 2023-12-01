@@ -47,12 +47,12 @@ Désactiver votre environnement virtuel:
 2. **Utilisation**
 
 
-    Exécutez le script
-    ```bash
+Exécutez le script
+   ```bash
     python usercheck.py 
     ou
     python3 usercheck.py
-    ```
+   ```
 
 ![Image d'illustration](images/usercheck-demo.png)
 
