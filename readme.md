@@ -12,24 +12,47 @@ Ce projet vise à créer un outil simple de vérification de présence d'un nom 
 ![Image d'illustration](images/usercheck.png)
 ## Installation de l'environnement Python avec pyenv
 
-1. **Installation de pyenv :**
+1. **Configuration d'un environnement virtuel Python sur Linux:**
+---
+**Assurez-vous avant de lancer le programme d'avoir Python installé sur votre ordinateur**
+
+Créez un répertoire pour votre projet:
+   ```bash 
+   mkdir votre_nom_de_projet
+   ```
+Déplacez-vous dans votre dossier qui vient d'être crée:
    ```bash
-   curl https://pyenv.run | bash
-   export PATH="$HOME/.pyenv/bin:$PATH"
-   eval "$(pyenv init --path)"
-   eval "$(pyenv virtualenv-init -)"
-   exec "$SHELL" 
-   pyenv install 3.8.12
-   pyenv local 3.8.12
-   pip install -r requirements.txt ```
+   cd votre_nom_de_projet
+   ```
+Créez un environnement virtuel avec **venv** en lui attribuant un nom : 
+   ```bash
+   python3 -m venv nom_de_votre_environnement
+   ```
+
+Activer votre environnement virtuel: 
+  ```bash
+  source nom_de_votre_environnement/bin/activate
+  ```
+Installation du fichier requirements.txt 
+  ```bash
+  pip ou pip3 install -r requirements.txt
+  ```
+Désactiver votre environnement virtuel:
+  ```bash
+  deactivate
+  ```
+Sous Windows: 
+
 
 2. **Utilisation**
-    Exécutez le script avec le nom d'utilisateur GitHub que vous voulez vérifier
 
-   ``` bash 
-   python usercheck.py https://github.com/utilisateur 
-   python3 nomdufichier
-   
+
+    Exécutez le script
+    ```bash
+    python usercheck.py 
+    ou
+    python3 usercheck.py
+    ```
 
 ![Image d'illustration](images/usercheck-demo.png)
 
