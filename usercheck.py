@@ -3,7 +3,7 @@ import re
 
 def get_github_user_info(username):
     try:
-        url = f'https://api.github.com/users/{username}'
+        url = f'https://api.github.com/users/{username}?scope=email'
         
         response = requests.get(url)
         
@@ -13,6 +13,11 @@ def get_github_user_info(username):
             print(f"Nom d'utilisateur: {user_data['login']}")
             print(f"Nom complet: {user_data['name']}")
             print(f"Biographie: {user_data['bio']}")
+            print(f"Société: {user_data.get('company', 'Non spécifiée')}")
+            print(f"Image de profil: {user_data['avatar_url']}")
+            print(f"Localisation: {user_data.get('location', 'Non spécifiée')}")
+            print(f"Adresse e-mail: {user_data.get('email', 'Non spécifiée')}")
+            print(f"Date de création du compte: {user_data['created_at']}")
             print(f"Nombre de followers: {user_data['followers']}")
             print(f"Nombre d'abonnements: {user_data['following']}")
             print(f"Nombre de repos: {user_data['public_repos']}")
@@ -20,6 +25,8 @@ def get_github_user_info(username):
             print(f"Erreur : Code de réponse {response.status_code}")
     except Exception as e:
         print(f"Une erreur s'est produite : {e}")
+
+
 
 def extract_github_username(github_url):
     try:
