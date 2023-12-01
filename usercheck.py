@@ -26,7 +26,6 @@ def get_github_user_info(username):
     except Exception as e:
         print(f"Une erreur s'est produite : {e}")
 
-# Le reste du code reste inchangé...
 
 
 def extract_github_username(github_url):
