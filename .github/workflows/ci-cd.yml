@@ -26,3 +26,6 @@ jobs:
     - name: Run tests
       run: |
         python -m unittest discover -v
+        
+    - name: Run Bandit
+      run: bandit -r .
