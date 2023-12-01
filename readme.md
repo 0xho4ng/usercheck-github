@@ -41,7 +41,7 @@ Désactiver votre environnement virtuel:
   ```bash
   deactivate
   ```
-Sous Windows: 
+  
 
 
 2. **Utilisation**
