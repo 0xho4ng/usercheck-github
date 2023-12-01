@@ -65,4 +65,4 @@ Demande à l'utisateur de rentrer son username de github pour avoir directement 
 
 ![Image d'illustration](images/usercheck-enter-username.png)
 
-![Image d'illustration](images/usercheck-enter-username-fonctionnement.png)
+![Image d'illustration](images/usercheck-enter-username-fonctionnement-upgrade-2.png)
